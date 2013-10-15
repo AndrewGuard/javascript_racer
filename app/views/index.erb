@@ -1,22 +1,25 @@
 <div class="login">
-  <h1> Welcome to ruby racer - enter your names and get ready to race. </h1>
+  <h1> Welcome to JAVA racer - enter your names and get ready to race. </h1>
   
   <form action="/authuser" method="post">    
     <table> 
 
-      <tr>
-        <td><label for="user">User Name</label></td>
-        <td><input type="text" name="user_name"/></td>
-      </tr> 
+      
+    <label>User Name1<input type="text" name="user_name1"/></label>
 
-      <tr>
-        <td><label for="user">User Name</label></td>
-        <td><input type="text" name="user_name"/></td>
-      </tr>
+    <br><br>
+    
+    <label>User Name2<input type="text" name="user_name2"/></label>
 
-      <tr>
-        <td><input type="Submit" name="Race it!"/></td>
-      </tr>
+    <br><br>
+     
+    <input type="Submit" name="Race it!"/>
+
+
+    <% if @error %>
+    <h2> <%= @error %> </h2>
+    <% end %> 
+      
     
     </table>
   </form>  
