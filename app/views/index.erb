@@ -1,89 +1,28 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
- 
-  <link rel="stylesheet" href="normalize.css">
-  <link rel="stylesheet" href="application.css">
-  <script type="text/javascript" src="application.js"> </script>
- 
-</head>
- 
-<body>
- 
-  <div class="container">
-    <h1>Ruby Racer!!</h1>
-    <p>Nuts!</p>
- 
-    <div>
-      <p id="game_over"></p>
-    </div>
- 
-   <table class="racer_table">
-    <tr id="player1_strip">
-      <td class="active1"></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
- 
-    <tr id="player2_strip">
-      <td class="active2"></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-  </table>
-  </div>
-</body>
+<div class="login">
+  <h1> Welcome to ruby racer - enter your names and get ready to race. </h1>
+  
+  <form action="/authuser" method="post">    
+    <table> 
+
+      <tr>
+        <td><label for="user">User Name</label></td>
+        <td><input type="text" name="user_name"/></td>
+      </tr> 
+
+      <tr>
+        <td><label for="user">User Name</label></td>
+        <td><input type="text" name="user_name"/></td>
+      </tr>
+
+      <tr>
+        <td><input type="Submit" name="Race it!"/></td>
+      </tr>
+    
+    </table>
+  </form>  
+
+  <br><br>
+  <a href="/race"> Race away!! </a>
+  <br><br>
+
+</div>

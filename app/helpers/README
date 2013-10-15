@@ -1,9 +1,5 @@
-Add helpers here as *.rb files, e.g.,
-
-app/helpers/formatting.rb
-
 helpers do
-  def em(text)
-    "<em>#{text}</em>"
+  def current_player
+    User.find_by_id(session[:id])
   end
 end
