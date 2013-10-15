@@ -1,89 +1,31 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
- 
-  <link rel="stylesheet" href="normalize.css">
-  <link rel="stylesheet" href="application.css">
-  <script type="text/javascript" src="application.js"> </script>
- 
-</head>
- 
-<body>
- 
-  <div class="container">
-    <h1>Ruby Racer!!</h1>
-    <p>Nuts!</p>
- 
-    <div>
-      <p id="game_over"></p>
-    </div>
- 
-   <table class="racer_table">
-    <tr id="player1_strip">
-      <td class="active1"></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
- 
-    <tr id="player2_strip">
-      <td class="active2"></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-  </table>
-  </div>
-</body>
+<div class="login">
+  <h1> Welcome to JAVA racer - enter your names and get ready to race. </h1>
+  
+  <form action="/authuser" method="post">    
+    <table> 
+
+      
+    <label>User Name1<input type="text" name="user_name1"/></label>
+
+    <br><br>
+    
+    <label>User Name2<input type="text" name="user_name2"/></label>
+
+    <br><br>
+     
+    <input type="Submit" name="Race it!"/>
+
+
+    <% if @error %>
+    <h2> <%= @error %> </h2>
+    <% end %> 
+      
+    
+    </table>
+  </form>  
+
+  <br><br>
+  <a href="/race"> Race away!! </a>
+  <br><br>
+
+</div>
