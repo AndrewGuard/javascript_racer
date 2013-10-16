@@ -1,5 +1,5 @@
 <div class="container">
-  <h1>Ruby Racer!!</h1>
+  <h1>Java Racer, folks!!</h1>
 
   <div>
     <p id="game_over"></p>
@@ -7,7 +7,7 @@
 
   <p id="game" data-game="<%= @game.id %>">  </p>
  
-  <div>
+  <div class="names">
     <p id="player1"> <%= @player1.name %> </p>
     <p id="player2"> <%= @player2.name %> </p>
   </div>
@@ -15,26 +15,6 @@
  <table class="racer_table">
   <tr id="player1_strip">
     <td class="active1"></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
     <td></td>
     <td></td>
     <td></td>
@@ -57,30 +37,17 @@
     <td></td>
     <td></td>
     <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
   </tr>
 </table>
+
 <br><br><br>
-<a href="/race/<%=@player1.id%>/<%=@player2.id%>"> Race again! </a>
-<br><br><br>
-<a href="/"> Login other players. </a>
+
+<div id="bottom_links">
+    
+    <a id="race_button" href="/race/<%=@player1.id%>/<%=@player2.id%>"> Race again! </a>
+    <br><br><br>
+    <a id="login_button" href="/"> Login other players. </a>
+
+</div>
+
 </div>
