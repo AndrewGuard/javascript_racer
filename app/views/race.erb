@@ -1,13 +1,11 @@
-
 <div class="container">
   <h1>Ruby Racer!!</h1>
-  <p>Nuts!</p>
 
   <div>
     <p id="game_over"></p>
   </div>
 
-  <p id="game" data-game= <%= @game.id %> >  </p>
+  <p id="game" data-game="<%= @game.id %>">  </p>
  
   <div>
     <p id="player1"> <%= @player1.name %> </p>
@@ -82,7 +80,7 @@
   </tr>
 </table>
 <br><br><br>
-<a href="/race"> Race again! </a>
+<a href="/race/<%=@player1.id%>/<%=@player2.id%>"> Race again! </a>
 <br><br><br>
 <a href="/"> Login other players. </a>
 </div>

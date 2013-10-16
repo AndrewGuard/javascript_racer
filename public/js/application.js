@@ -15,7 +15,7 @@ $(document).ready(function() {
         $(this).off(event); 
         var player1 = $('#player1').text();
         update_user(player1);
-        $('#game_over').append(player1 + "wins in " + time + " miliseconds.");
+        $('#game_over').append(player1 + "wins in " + time + " milliseconds.");
         }
       }
  
@@ -30,7 +30,7 @@ $(document).ready(function() {
         $(this).off(event);
         var player2 = $('#player2').text(); 
         update_user(player2);
-        $('#game_over').append(player2 + "wins in " + time + " miliseconds.");
+        $('#game_over').append(player2 + "wins in " + time + " milliseconds.");
       }
     }
   });
